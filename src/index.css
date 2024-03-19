@@ -1,7 +1,18 @@
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --main-bg-color: #1B1A17;
+  --light-bg-color: #242320;
+  --mark-hover-color: #A35709;
+  --mark-color: #FF8303;
+  --text-color: #F0E3CA;
+  --primary-link-color: #3a5ccc;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #1B1A17;
 }
 
 
@@ -45,4 +56,90 @@
 .todo-edit-delete-div{
   display: flex;
   gap: 10px;
+}
+
+
+
+.parent-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.space-between {
+  justify-content: space-between;
+}
+.justify {
+  justify-content: center;
+}
+.align {
+  align-items: center;
+}
+.w-full{
+  width: 100%;
+}
+
+.gap-half{
+  gap: 2px;
+}
+.gap-1 {
+  gap: 4px;
+}
+.gap-6px{
+  gap: 6px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-10px{
+  gap:10px
+}
+.gap-3 {
+  gap: 12px;
+}
+.gap-4 {
+  gap: 16px;
+}
+.gap-5 {
+  gap: 20px;
+}
+.gap-6 {
+  gap: 24px;
+}
+.gap-7 {
+  gap: 28px;
+}
+.gap-8 {
+  gap: 32px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d5d5d5; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000; 
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb; 
 }
