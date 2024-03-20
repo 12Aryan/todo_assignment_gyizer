@@ -1,11 +1,9 @@
 import React from "react";
 
-const index = ({ icon }) => {
+const ButtonField = ({ icon ,text,disabled ,style, onClick}) => {
   return (
-    <div>
-      <button></button>
-    </div>
+      <button disabled={disabled} style={style} className="buttonField" onClick={onClick}>{text && <div>{text}</div>}{icon && <div>{icon}</div>}</button>
   );
 };
 
-export default index;
+export default ButtonField;

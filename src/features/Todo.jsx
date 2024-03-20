@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addTodo, deleteTodo, getTodos, updateTodo } from "../redux/TodoSlice";
 
-const Todo = () => {
+const TodoFeatures = () => {
   const dispatch = useDispatch();
   const todoList = useSelector(getTodos);
   const [todoData, setTodoData] = useState({ title: "", description: "" });
@@ -51,8 +51,6 @@ const Todo = () => {
   })
   
   }
-
-  console.log('-->>',updateTodoData, showUpdateInput);
 
   return (
     <>

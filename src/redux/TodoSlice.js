@@ -13,7 +13,6 @@ const todoSlice = createSlice({
     },
     updateTodo: (state, action) => {
         const {updatedDataIndex, updateTodoData} = action.payload
-        console.log(updatedDataIndex, updateTodoData);
         state.todos[updatedDataIndex] = updateTodoData
     },
     deleteTodo: (state, action) => {

@@ -3,7 +3,7 @@ import Todo from "./features";
 
 const App = () => {
   return (
-    <div>
+    <div className="wrapper">
       <Todo />
     </div>
   );
